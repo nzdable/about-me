@@ -56,12 +56,12 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  filter: drop-shadow(0 0 15px rgba(81, 25, 109, 0.7)); /* Initial purple glow */
-  transition: filter 0.3s ease-in-out; /* Smooth transition */
+  filter: drop-shadow(0 0 15px rgba(81, 25, 109, 0.7)); 
+  transition: filter 0.3s ease-in-out;
 }
 
 .aboutImage:hover {
-  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1)); /* Enhanced glow on hover */
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1)); 
 }
 
 @keyframes floating {
