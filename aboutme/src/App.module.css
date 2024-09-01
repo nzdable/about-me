@@ -1,0 +1,19 @@
+
+.App {
+  background-color: var(--color-bg);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+:root {
+    /* Colours */
+    --color-text: #fff;
+    --color-primary: #6b49a1;
+    --color-secondary: #523A7A;
+    --color-dark: #3F384C;
+    --color-bg: #231C2F;
+  
+    /* Fonts */
+    --font-roboto: "Roboto";
+  }

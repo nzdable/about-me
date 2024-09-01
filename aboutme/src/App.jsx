@@ -1,4 +1,4 @@
-import './App.module.css'; // Make sure you import the CSS file correctly
+import styles from './App.module.css';
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import IntroParagraph from "./components/IntroParagraph/IntroParagraph";
@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App"> 
+    <div className={styles.App}> 
       <Navbar />
       <About />
       <IntroParagraph />

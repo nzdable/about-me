@@ -1,4 +1,3 @@
-
 .container {
   position: relative;
   background-color: rgba(12, 12, 12, 0.6);
@@ -16,6 +15,18 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* Position below the title */
+  width: 100%;
+  height: 4px; /* Thickness of the glow line */
+  background: var(--color-primary); /* Glow color */
+  box-shadow: 0 0 10px var(--color-primary); /* Glowing effect */
 }
 
 .content {
@@ -50,6 +61,19 @@
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: 0.4s;
+  position: relative; /* Needed for the glowing effect */
+}
+
+.aboutItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Position at the bottom of the item */
+  width: 100%;
+  height: 4px; /* Thickness of the glow line */
+  background: var(--color-primary); /* Glow color */
+  box-shadow: 0 0 8px var(--color-primary); /* Glowing effect */
+  z-index: -1; /* Place behind the item content */
 }
 
 .aboutItem:hover {

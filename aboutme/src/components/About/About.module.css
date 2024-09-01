@@ -56,6 +56,12 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  filter: drop-shadow(0 0 15px rgba(81, 25, 109, 0.7)); /* Initial purple glow */
+  transition: filter 0.3s ease-in-out; /* Smooth transition */
+}
+
+.aboutImage:hover {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1)); /* Enhanced glow on hover */
 }
 
 @keyframes floating {
@@ -79,7 +85,7 @@
   top: -128px;
   left: -10vw;
   border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
+  background: rgba(81, 25, 109, 0.7);
   filter: blur(100px);
   z-index: 0;
 }
@@ -93,9 +99,13 @@
   top: 246px;
   right: -25vw;
   border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
+  background: rgba(81, 25, 109, 0.7);
   filter: blur(100px);
   z-index: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 830px) {

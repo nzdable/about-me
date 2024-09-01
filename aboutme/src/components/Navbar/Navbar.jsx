@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from "./Navbar.module.css";
-import menuIcon from '../../assets/Navbar/menuIcon.png';
+
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -8,28 +8,19 @@ export const Navbar = () => {
     return (
         <nav className={styles.navbar}>
           <a className={styles.title} href="/">
-            Portfolio
+            About Me
           </a>
           <div className={styles.menu}>
-          <img src={menuIcon} alt="description" className={styles.menuIcon} />
 
-            {/* <img
-             {menuIcon} alt="menu" className={styles.aboutImage}
-              alt="menu-button"
-              onClick={() => setMenuOpen(!menuOpen)}
-            /> */}
             <ul
               className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
               onClick={() => setMenuOpen(false)}
             >
               <li>
-                <a href="#about">About</a>
+                <a href="#introparagraph">About</a> {/* Updated href */}
               </li>
               <li>
-                <a href="#experience">Experience</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
+                <a href="#likesdislikes">Fun Facts</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
@@ -38,7 +29,6 @@ export const Navbar = () => {
           </div>
         </nav>
       );
-    
 };
 
 export default Navbar;

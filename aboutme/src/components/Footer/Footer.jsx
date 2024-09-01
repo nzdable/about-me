@@ -1,32 +1,29 @@
 import React from "react";
-
 import styles from "./Footer.module.css";
-import { getImageUrl } from "../../utils";
+import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
 
 export const Footer = () => {
   return (
     <footer id="contact" className={styles.container}>
       <div className={styles.text}>
         <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
+        <br />
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:myemail@email.com">myemail@email.com</a>
+          <i className="fab fa-linkedin"></i> 
+          <a href="https://www.linkedin.com/in/myname" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </li>
         <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
-          />
-          <a href="https://www.linkedin.com/myname">linkedin.com/myname</a>
+          <i className="fab fa-instagram"></i> 
+          <a href="https://www.instagram.com/necssss/?hl=en" target="_blank" rel="noopener noreferrer">Instagram</a>
         </li>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://www.github.com/myname">github.com/myname</a>
+          <i className="fab fa-facebook"></i> 
+          <a href="https://www.facebook.com/nica.dable1" target="_blank" rel="noopener noreferrer">Facebook</a>
         </li>
       </ul>
+      <div className={styles.blurBackground}></div>
     </footer>
   );
 };

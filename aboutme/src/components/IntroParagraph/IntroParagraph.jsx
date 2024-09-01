@@ -3,39 +3,32 @@ import styles from "./IntroParagraph.module.css";
 
 const IntroParagraph = () => {
   return (
-    <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
+    <section className={styles.container} id="introparagraph">
+      <h2 className={styles.title}>About Me</h2>
       <div className={styles.content}>
-
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-
             <div className={styles.aboutItemText}>
-              <h3>Frontend Developer</h3>
-              <p>
-                I'm a frontend developer with experience in building responsive
-                and optimized sites.
-              </p>
+              <h3>Full Name</h3>
+              <p>Nica Zoe A. Dable</p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-
             <div className={styles.aboutItemText}>
-              <h3>Backend Developer</h3>
-              <p>
-                I have experience developing fast and optimized back-end systems
-                and APIs.
-              </p>
+              <h3>Education</h3>
+              <p>3rd Year - Bachelor of Science in Computer Science</p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-
             <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
-              <p>
-                I have designed multiple landing pages and created design
-                systems as well.
-              </p>
+              <h3>Birthday</h3>
+              <p>November 16, 200X</p>
+            </div>
+          </li>
+          <li className={styles.aboutItem}>
+            <div className={styles.aboutItemText}>
+              <h3>Hobbies</h3>
+              <p>Reading, Watching Movies, Volunteering, Exploring Technology</p>
             </div>
           </li>
         </ul>

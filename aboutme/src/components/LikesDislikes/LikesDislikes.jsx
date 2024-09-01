@@ -1,18 +1,16 @@
 import React from "react";
-
 import styles from "./LikesDislikes.module.css";
-
-import likesdislikes from "../../data/likesdislikes.json";
+import likesDislikesData from "../../data/likesdislikes.json"; // Ensure this path is correct
 import { Cards } from "./Cards";
 
 export const LikesDislikes = () => {
   return (
     <section className={styles.container} id="likesdislikes">
-      <h2 className={styles.title}>Projects</h2>
-      <div className={styles.likesdislikes}>
-        {likesdislikes.map((likesdislikes, id) => {
-          return <Cards key={id} likesdislikes={likesdislikes} />;
-        })}
+      <h2 className={styles.title}>Fun Facts</h2>
+      <div className={styles.cardsContainer}>
+        {likesDislikesData.map((item, index) => (
+          <Cards key={index} item={item} />
+        ))}
       </div>
     </section>
   );

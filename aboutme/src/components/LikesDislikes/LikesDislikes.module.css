@@ -1,9 +1,9 @@
-
 .container {
   margin-top: 76px;
   color: var(--color-text);
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 100px;
 }
 
 .title {
@@ -13,13 +13,16 @@
   text-transform: uppercase;
 }
 
-.likesdislikes {
-  margin-top: 37px;
+.cardsContainer {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  gap: 50px;
   justify-content: center;
-  gap: 15px;
-  width: 100%;
 }
+
+.card {
+  flex: 1 1 calc(50% - 15px); /* 50% width minus gap */
+  max-width: calc(50% - 15px); /* Ensure it fits within the container */
+}
+
+
